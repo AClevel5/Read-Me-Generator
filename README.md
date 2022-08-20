@@ -1,5 +1,5 @@
-# ReadMe Generator
-![License](https://img.shields.io/badge/License-RUST-blue.svg)
+# README Generator
+![License](https://img.shields.io/badge/License-APACHE-blue.svg)
 
 ## Table of Contents
 
@@ -24,12 +24,12 @@ Run in terminal and answer the questions. The read me will be automatically gene
 Reach out via the email below.
 
 ## License
-RUST
+APACHE
 
 ## Tests
 Open terminal and run.
 
 ## Questions
-GitHub: github.com/Aclevel5
+GitHub: [Aclevel5's GitHub](https://github.com/Aclevel5)
 
-Please reach me via email Alex@gmail.com
+Please reach me via email alex@gmail.com

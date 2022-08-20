@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //Create an array of questions for user input
-const questions = [ {
+const questions = [{
     type: 'input',
     message: 'What is the title of your project?',
     name: 'title',
@@ -59,8 +59,8 @@ const questions = [ {
 
 //Takes in response data and places into Readme structure
 
-const generateReadme = ({title, description, installation, usage, contributing, tests, license, gitHubUrl, email}) =>
-`# ${title}
+const generateReadme = ({ title, description, installation, usage, contributing, tests, license, gitHubUrl, email }) =>
+    `# ${title}
 ![License](https://img.shields.io/badge/License-${license}-blue.svg)
 
 ## Table of Contents
@@ -92,7 +92,7 @@ ${license}
 ${tests}
 
 ## Questions
-GitHub: github.com/${gitHubUrl}
+GitHub: [${gitHubUrl}'s GitHub](https://github.com/${gitHubUrl})
 
 Please reach me via email ${email}
 `;
@@ -100,14 +100,14 @@ Please reach me via email ${email}
 //Initializing
 function init() {
     inquirer
-    .prompt(questions)
-    .then((response) => {
-        const readMeContent = generateReadme(response);
-        fs.writeFile('README.md', readMeContent, (err) =>
-        err ? console.log(err) : console.log('README file generated'))
-        
-    })
-    
+        .prompt(questions)
+        .then((response) => {
+            const readMeContent = generateReadme(response);
+            fs.writeFile('README.md', readMeContent, (err) =>
+                err ? console.log(err) : console.log('README file generated'))
+
+        })
+
 };
 
 //Function call to initialize app
