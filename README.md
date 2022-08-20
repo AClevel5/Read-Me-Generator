@@ -1,5 +1,5 @@
-# Alex
-![License](https://img.shields.io/badge/License-APACHE-blue.svg)](https://opensource.org/licenses/APACHE)
+# ReadMe Generator
+![License](https://img.shields.io/badge/License-RUST-blue.svg)
 
 ## Table of Contents
 
@@ -12,23 +12,24 @@
 
 
 ## Description
-Alex
+Runs a program to prompt questions and compile a README file from the answers.
 
 ## Installation
-Alex
+Download files to your computer.
 
 ## Usage
-Alex
+Run in terminal and answer the questions. The read me will be automatically generator once you answer all questions.
 
 ## Contributing
-Alex
+Reach out via the email below.
 
 ## License
-APACHE
+RUST
 
 ## Tests
-Alex
+Open terminal and run.
 
 ## Questions
-github.com/Aclevel5
-Please reach me via email aladsfl
+GitHub: github.com/Aclevel5
+
+Please reach me via email Alex@gmail.com

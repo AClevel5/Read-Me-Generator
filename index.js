@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input
 const questions = [ {
     type: 'input',
     message: 'What is the title of your project?',
@@ -57,14 +57,11 @@ const questions = [ {
 },
 ];
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-    
-// }
+//Takes in response data and places into Readme structure
 
 const generateReadme = ({title, description, installation, usage, contributing, tests, license, gitHubUrl, email}) =>
 `# ${title}
-![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
+![License](https://img.shields.io/badge/License-${license}-blue.svg)
 
 ## Table of Contents
 
@@ -95,11 +92,12 @@ ${license}
 ${tests}
 
 ## Questions
-github.com/${gitHubUrl}
+GitHub: github.com/${gitHubUrl}
+
 Please reach me via email ${email}
 `;
 
-// TODO: Create a function to initialize app
+//Initializing
 function init() {
     inquirer
     .prompt(questions)
@@ -112,5 +110,5 @@ function init() {
     
 };
 
-// Function call to initialize app
+//Function call to initialize app
 init();
