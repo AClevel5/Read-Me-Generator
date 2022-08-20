@@ -48,7 +48,7 @@ const questions = [ {
 {
     type: 'input',
     message: 'What is your github url?',
-    name: 'githuburl',
+    name: 'gitHubUrl',
 },
 {
     type: 'input',
@@ -58,16 +58,14 @@ const questions = [ {
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// function writeToFile(fileName, data) {
     
-}
+// }
 
-const generateReadme = ({title,}) =>
+const generateReadme = ({title, description, installation, usage, contributing, tests, license, gitHubUrl, email}) =>
 `# <${title}>
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -78,31 +76,37 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 
 ## Description
-
+${description}
 
 ## Installation
-
+${installation}
 
 ## Usage
-
+${usage}
 
 ## Contributing
-
+${contributing}
 
 ## License
-
+${license}
 
 ## Tests
+${tests}
 
-
-## Questions`;
+## Questions
+${gitHubUrl}
+${email}
+`;
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions)
     .then((response) => {
-        console.log(response);
+        const readMeContent = generateReadme(response);
+        fs.writeFile('README.md', readMeContent, (err) =>
+        err ? console.log(err) : console.log('README file generated'))
+        
     })
     
 };
