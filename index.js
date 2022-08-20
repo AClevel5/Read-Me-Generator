@@ -64,7 +64,7 @@ const questions = [ {
 
 const generateReadme = ({title, description, installation, usage, contributing, tests, license, gitHubUrl, email}) =>
 `# ${title}
-https://img.shields.io/badge/${license}-blue
+![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## Table of Contents
 

@@ -1,5 +1,5 @@
-# Readme Generator
-https://img.shields.io/badge/RUST-blue
+# Alex
+![License](https://img.shields.io/badge/License-APACHE-blue.svg)](https://opensource.org/licenses/APACHE)
 
 ## Table of Contents
 
@@ -12,23 +12,23 @@ https://img.shields.io/badge/RUST-blue
 
 
 ## Description
-Quick way to compile a Readme file. Asks you a series of questions and uses those for input.
+Alex
 
 ## Installation
-Save files onto your computer and run within Terminal.
+Alex
 
 ## Usage
-Start the program and then answer a series of questions. Once done it will automatically create a Readme file.
+Alex
 
 ## Contributing
-Reach out via email below for access.
+Alex
 
 ## License
-RUST
+APACHE
 
 ## Tests
-Run in terminal
+Alex
 
 ## Questions
 github.com/Aclevel5
-Please reach me via email Alexcleveland@gmail.com
+Please reach me via email aladsfl
