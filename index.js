@@ -63,7 +63,8 @@ const questions = [ {
 // }
 
 const generateReadme = ({title, description, installation, usage, contributing, tests, license, gitHubUrl, email}) =>
-`# <${title}>
+`# ${title}
+https://img.shields.io/badge/${license}-blue
 
 ## Table of Contents
 
@@ -94,8 +95,8 @@ ${license}
 ${tests}
 
 ## Questions
-${gitHubUrl}
-${email}
+github.com/${gitHubUrl}
+Please reach me via email ${email}
 `;
 
 // TODO: Create a function to initialize app

@@ -1,4 +1,5 @@
-# <Chillin>
+# Readme Generator
+https://img.shields.io/badge/RUST-blue
 
 ## Table of Contents
 
@@ -11,23 +12,23 @@
 
 
 ## Description
-Very Chill
+Quick way to compile a Readme file. Asks you a series of questions and uses those for input.
 
 ## Installation
-Chill out and hit download
+Save files onto your computer and run within Terminal.
 
 ## Usage
-Turn it on and chill
+Start the program and then answer a series of questions. Once done it will automatically create a Readme file.
 
 ## Contributing
-Just chill on that
+Reach out via email below for access.
 
 ## License
-APACHE
+RUST
 
 ## Tests
-Chill out it works
+Run in terminal
 
 ## Questions
-aclevel5
-alexcleveland5@gmail.com
+github.com/Aclevel5
+Please reach me via email Alexcleveland@gmail.com
